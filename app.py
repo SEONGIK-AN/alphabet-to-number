@@ -100,7 +100,7 @@ class MainWindow(QWidget):
 
         if int(user_input) == correct_answer:
             self.response_times.append((self.current_alpha, elapsed))
-            self.time_label.setText(f"이전 문제 시간: {elapsed:.3f}초")
+            self.time_label.setText(f"이전 문제 풀이에 걸린 시간: {elapsed:.3f}초")
             self.next_question()
             self.input_field.selectAll()
         else:
